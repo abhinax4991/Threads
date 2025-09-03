@@ -6,10 +6,12 @@ public class ThreadCreationExampleV0 {
             @Override
             public void run() {
                 System.out.println("We are now in a thread " + Thread.currentThread().getName());
+                System.out.println("Current thread priority is " + Thread.currentThread().getPriority());
 
             }
         });
         thread.setName("New Worker thread");
+        thread.setPriority(Thread.MAX_PRIORITY);
 
         System.out.println("We are in thread: " + Thread.currentThread().getName() + " before starting");
         thread.start();
