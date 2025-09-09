@@ -10,8 +10,10 @@ public class ThreadInterruptExample {
                         new BigInteger("20000"), new BigInteger("1000000")
                 )
         );
+//        thread.setDaemon(true);
         thread.start();
-        thread.interrupt();
+//        thread.interrupt();
+
 
     }
 
